@@ -1,0 +1,116 @@
+.slider {
+  margin-top: 40px;
+}
+
+.slider .container {
+  .container--center;
+}
+
+.slider-title {
+  .title--uniform;
+}
+
+.slider-title span {
+  color: #000000;
+}
+
+.slider-description {
+  .p--zeroing;
+  text-align: center;
+  font-size: 14px;
+}
+
+.slider__list-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0 auto;
+}
+
+.slider__list {
+  .list--zeroing;
+  margin: 70px auto 0;
+  position: relative;
+  width: 800px;
+}
+
+.slider__input-wrapper {
+  margin: 0 auto;
+}
+
+.slider__item {
+  position: absolute;
+  width: 800px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-products-controls {
+  margin: 105px auto 0;
+  padding-right: 50px;
+  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 57px;
+}
+
+.slider-controls-item {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: @blue;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+#partners-1:checked~.slider__list > .slider__item:nth-child(1),
+#partners-2:checked~.slider__list > .slider__item:nth-child(2),
+#partners-3:checked~.slider__list > .slider__item:nth-child(3) {
+  transition: 3s;
+  opacity: 1;
+}
+
+#partners-1:checked~.slider-products-controls > .slider-controls-item:nth-child(1),
+#partners-2:checked~.slider-products-controls > .slider-controls-item:nth-child(2),
+#partners-3:checked~.slider-products-controls > .slider-controls-item:nth-child(3) {
+  background-color: @orange;
+}
+@media (min-width: @mobile-width-min) and (max-width: @mobile-width-only) {
+  .slider .container {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .slider__list {
+    margin-top: 30px;
+    width: 310px;
+  }
+
+  .slider__item {
+    width: 320px;
+    flex-direction: column;
+  }
+
+  .slider__item img {
+    margin: 0 auto 25px;
+  }
+
+  .slider-products-controls {
+    margin-top: 300px;
+    padding-right: 0;
+    z-index: 3;
+    width: 87px;
+  }
+}
+
+@media (min-width: @mobile-width-only) and (max-width: @desktop-width) {
+  .slider .container {
+    width: 768px;
+  }
+
+}

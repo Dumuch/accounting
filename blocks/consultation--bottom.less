@@ -1,0 +1,159 @@
+.consultation--bottom {
+  background-color: @blue;
+}
+
+.consultation--bottom .container {
+  .container--center;
+  display: flex;
+  justify-content: flex-start;
+  padding: 30px 0;
+}
+
+.consultation--bottom__wrapper {
+  box-sizing: border-box;
+  width: 668px;
+  padding: 36px 65px;
+  border-right: 1px solid #e6e7e8;
+}
+
+.contacts-wrapper {
+  padding: 36px 65px;
+}
+
+.consultation-title {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.consultation-description {
+  margin-bottom: 25px;
+}
+
+.consultation-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.consultation-form input {
+  padding: 20px;
+  margin-bottom: 29px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+}
+
+.consultation-form textarea {
+  min-height: 80px;
+  padding: 20px;
+  margin-bottom: 40px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  resize: none;
+}
+
+.consultation-form .button--back_call {
+  width: 180px;
+  margin-top: 15px;
+}
+
+.contacts__list {
+  .list--zeroing;
+}
+
+.contacts-title {
+  .title--zeroing;
+  margin-bottom: 15px;
+  font-weight: bolder;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.contacts-description {
+  font-size: 15px;
+  color: #ffffff;
+  padding-left: 33px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+  }
+}
+
+.contacts-description--address {
+  &::before {
+    background-image: url('../img/place.png');
+  }
+}
+
+.contacts-description--phone {
+  &::before {
+    background-image: url('../img/phone.png');
+  }
+}
+
+.contacts__item .logo__image {
+  margin-top: 75px;
+}
+
+@media (min-width: @mobile-width-min) and (max-width: @mobile-width-only) {
+  .consultation--bottom .container {
+    width: 320px;
+    padding: 0;
+    flex-direction: column;
+}
+
+.consultation--bottom__wrapper {
+    width: 320px;
+    padding: 30px;
+    border: none
+}
+
+.consultation--bottom__wrapper .consultation-title {
+     text-align: center;
+
+}
+
+.consultation--bottom__wrapper  .consent {
+     margin-top: 0px;
+}
+.consultation-description {
+    text-align: center;
+
+}
+
+.contacts-wrapper {
+    padding: 30px;
+}
+
+.consultation-form .button--back_call {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.contacts-wrapper .consultation-title {
+     text-align: center;
+
+}
+
+.contacts-wrapper .contacts__item:last-child .logo__image {
+width: 185px;
+margin-left: 40px;
+margin-top: 25px;
+}
+}
+
+@media (min-width: @mobile-width-only) and (max-width: @desktop-width) {
+  .consultation--bottom  .container {
+    width: 768px;
+  }
+
+}

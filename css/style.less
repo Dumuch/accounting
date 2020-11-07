@@ -1,0 +1,73 @@
+@import "../variables.less";
+@import "../scaffolding.less";
+
+
+@import "../blocks/header.less";
+@import "../blocks/promo.less";
+@import "../blocks/services.less";
+@import "../blocks/price.less";
+@import "../blocks/about.less";
+@import "../blocks/consultation.less";
+@import "../blocks/advantages.less";
+@import "../blocks/consultation--bottom.less";
+@import "../blocks/slider.less";
+@import "../blocks/map.less";
+@import "../blocks/main-footer.less";
+
+
+@import "../blocks/modal.less";
+
+
+.main-header,
+.main-page,
+.main-footer {
+	overflow: hidden;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute !important;
+
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px;
+	padding: 0 !important;
+	border: 0 !important;
+
+  white-space: nowrap;
+
+  clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 27px;
+  font-family: "Arial", sans-serif;
+  color: #000000;
+}
+
+// img {
+//   max-width: 100%;
+//   height: auto;
+// }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  /*все ссылки без подчеркивания, кроме нескольких,
+  которые потом локально и изменим*/
+}
+//
+// input[type='number'] {
+//     -moz-appearance:textfield;
+// }
+//
+// input::-webkit-outer-spin-button,
+// input::-webkit-inner-spin-button {
+//     -webkit-appearance: none;
+// }

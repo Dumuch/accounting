@@ -1,0 +1,154 @@
+.consultation {
+  height: 483px;
+  background-image: linear-gradient(transparent 156px, @blue 156px);
+}
+
+.consultation .container {
+  .container--center;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.consultation-wrapper:first-child {
+  padding-left: 65px;
+  padding-bottom: 55px;
+}
+
+.back_call-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.consent {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.consultation-description {
+  .p--zeroing;
+  margin-bottom: 35px;
+  color: #ffffff;
+}
+
+.consultation-title {
+  .title--uniform;
+  margin-bottom: 25px;
+}
+
+.consultation-title span {
+  color: #ffffff;
+}
+
+.button--back_call {
+  padding: 21px;
+}
+
+.back_call-input {
+  .button--zeroing;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  width: 205px;
+  border-radius: 8px;
+  padding: 21px;
+}
+@media (min-width: @mobile-width-min) and (max-width: @mobile-width-only) {
+  .consultation {
+    height: 479px;
+    background-image: none;
+    background-color: @blue;
+  }
+
+  .consultation .container {
+    width: 320px;
+  }
+
+  .consultation-wrapper:first-child {
+    padding-left: 0;
+  }
+
+  .consultation-wrapper .consultation-title {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+
+  .consultation-wrapper .consultation-description {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .consultation__image {
+    display: none;
+  }
+
+  .back_call-form {
+    flex-direction: column;
+  }
+
+  .back_call-input {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .back_call-input::placeholder {
+    text-align: center;
+  }
+
+  .consent {
+    display: block;
+    margin-top: 45px;
+    text-align: center;
+  }
+}
+@media (min-width: @mobile-width-only) and (max-width: @desktop-width) {
+  .consultation .container {
+    width: 768px;
+  }
+
+  .consultation__image {
+    width: 380px;
+    height: auto;
+  }
+
+  .consultation {
+    height: 353px;
+    background-image: linear-gradient(transparent 66px, #395ea3 66px);
+  }
+
+  .consultation-wrapper:first-child {
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+
+  .consultation-title {
+    font-size: 28px;
+  }
+
+  .consultation-description {
+    width: 250px;
+  }
+
+  .advantages-wrapper {
+    padding: 25px;
+  }
+
+  .advantages__item {
+    margin-bottom: 25px;
+  }
+
+  .advantages__item-description:last-child {
+    display: none;
+  }
+
+  .advantages__item--bottom .advantages-wrapper {
+    padding: 15px;
+  }
+
+    .advantages__item .advantages__item--bottom {
+    height: 203px;
+  }
+}

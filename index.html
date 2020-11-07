@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<title>Бухгалтерский учет</title>
+	<script src="js/wow.min.js"></script>
+
+</head>
+
+<body>
+
+	<header class="main-header" id="top">
+		<div class="container">
+			<nav class="main-nav">
+				<a href="#" class="page-header-logo">
+					<picture>
+						<source type="image/webp" srcset="img/logo@1x.webp, img/logo@2x.webp 2x">
+						<img class="logo__image" src="img/logo@1x.png" srcset="img/logo@2x.png 2x" width="185" height="132" alt="Бухгалтерская фирма Поддержка">
+					</picture>
+				</a>
+				<div class="main-nav__wrapper">
+					<ul class="user-nav__list">
+						<li class="user-nav__item user-nav--place">
+							<!-- по нажатию перемещение на карту -->
+							<a href="#map">ул. Ивана Богаткова, 29 оф. 107</a>
+						</li>
+						<li class="user-nav__item user-nav--phone">
+							<!-- по нажатию открывается набранный номер -->
+							<a href="tel:12345678">тел: +7(999)123-45-67</a>
+						</li>
+						<li class="user-nav__item">
+							<a href="#consultation" class="button user-nav--button">Заказать звонок</a>
+						</li>
+					</ul>
+					<ul class="site-nav__list site-nav--top">
+						<li class="site-nav__item"><a href="">Главная</a></li>
+						<li class="site-nav__item"><a href="#services">Услуги</a></li>
+						<li class="site-nav__item"><a href="#price">Тарифный план</a></li>
+						<li class="site-nav__item"><a href="#about">О нас</a></li>
+						<li class="site-nav__item"><a href="#advantages">Преимущества</a></li>
+						<li class="site-nav__item"><a href="#slider">Нам доверяют</a></li>
+					</ul>
+					<button class="site-nav__toggle" type="button">
+						<span class="visually-hidden">Открыть меню</span>
+					</button>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<main class="main-page">
+		<section class="promo">
+			<h1 class="visually-hidden">Ведение бухгалтерского учета</h1>
+			<div class="container">
+				<div class="promo-specification">
+					<div class="promo-specification__wrapper">
+						<p class="promo-title"><span>Полное ведение</span> бухгалтерского
+							учета в компаниях<br>с любыми системами налогообложения</p>
+						<p class="promo-description">Юридические услуги, налоговый и кадастровый учет,
+							Техническое и 1с сопровождение компаний<br> и многое другое</p>
+						<!-- по нажатию перебрасывается на заказать звонок -->
+						<a href="#consultation--bottom" class="promo-button button">Консультация</a>
+					</div>
+				</div>
+				<div class="promo-image__wrapper">
+					<picture>
+						<source type="image/webp" media="(min-width: 1300px)" srcset="img/promo-1@1x.webp, img/promo-1@2x.webp 2x">
+						<source type="image/webp" media="(min-width: 768px)" srcset="img/promo-tablet-1@1x.webp, img/promo-tablet-1@2x.webp 2x">
+						<source type="image/webp" srcset="img/promo-mobile-1@1x.webp, img/promo-mobile-1@2x.webp 2x">
+
+						<source media="(min-width: 1300px)" srcset="img/promo-1@1x.jpg, img/promo-1@2x.jpg 2x">
+						<source media="(min-width: 768px)" srcset="img/promo-tablet-1@1x.jpg, img/promo-tablet-1@2x.jpg 2x">
+						<img class="promo__image" src="img/promo-mobile-1@1x.jpg" srcset="img/promo-mobile-1@2x.jpg 2x" width="320" height="590" alt="Ведение бухгалтерского учета">
+					</picture>
+				</div>
+			</div>
+		</section>
+
+		<section class="services">
+			<div class="container">
+				<h2 class="services-title wow" id="services"><span>Наши</span> услуги</h2>
+				<p class="services-description">Узнайте больше о наших направлениях</p>
+				<ul class="services__list">
+					<li class="services__item services__item--accounting">Бухгалтерская поддержка</li>
+					<li class="services__item services__item--legal">Юридическая поддержка</li>
+					<li class="services__item services__item--technical">Техническая поддержка</li>
+				</ul>
+				<ul class="services-extra__list">
+					<li class="services-extra__item">
+						Полное бухгалтерское обслуживание Организаций и ИП на ОСНО (от 10 000 руб./мес.)
+					</li>
+					<li class="services-extra__item">
+						Полное бухгалтерское обслуживание Организаций и ИП на УСН (от 7 000 руб./мес.)
+					</li>
+					<li class="services-extra__item">
+						Полное бухгалтерское обслуживание Организаций и ИП на ЕНВД (от 1 500 руб./мес.)
+					</li>
+					<li class="services-extra__item">
+						Подготовка любых видов бухгалтерской и налоговой отчетности
+					</li>
+					<li class="services-extra__item">
+						Восстановление бухгалтерского учета
+					</li>
+				</ul>
+				<a href="#consultation--bottom" class="button services-button">Узнать о полном списке предоставляемых услуг</a>
+
+			</div>
+		</section>
+
+		<section class="price">
+			<div class="container">
+				<h2 class="price-title wow" id="price">Тарифный <span>план</span></h2>
+				<p class="price-description">
+					Выберите один из представленных пакетов
+					комплексной программы
+				</p>
+				<ul class="price__list">
+					<li class="price__item price__item--light">
+						<div class="price_item-wrapper">
+							<h3 class="price_item-title">Старт</h3>
+							<p class="price_item-description">
+								Для тех кто только начинает бизнес
+							</p>
+							<ul class="part__list">
+								<li class="part__item">
+									<span class="item-dash"></span> Бухгалтерское обслуживание<br> (УСН, ЕНВД, до трех сотрудников)
+								</li>
+								<li class="part__item">
+									<span class="item-dash"></span> Системное администрирование -<br> 1,5 часа в месяц (консультации по
+									телефону и удаленная помощь)
+								</li>
+								<li class="part__item">
+									<span class="item-dash"></span> 1С обслуживание - 1,5 часа в месяц (консультации<br> по телефону и
+									удаленная помощь)
+								</li>
+							</ul>
+							<p class="afterword">
+								*Услуги технического отдела сверх установленного лимита оплачиваются
+								по общему прайс листу.
+							</p>
+						</div>
+						<div class="cost-button-wrapper">
+							<span class="cost">10 000 Р/мес</span>
+							<a href="#consultation--bottom" class="button price-button" onclick="pricelight()">Выбрать</a>
+						</div>
+					</li>
+
+					<li class="price__item price__item--middle">
+						<div class="price_item-wrapper">
+							<h3 class="price_item-title ">Все под контролем</h3>
+							<p class="price_item-description">
+								Для тех у кого небольшой документооборот
+							</p>
+							<ul class="part__list">
+								<li class="part__item">
+									<span class="item-dash"></span> Бухгалтерское обслуживание<br> (УСН - свыше трех сотрудников, ОСНО<br> - до
+									пяти сотрудников)
+								</li>
+								<li class="part__item">
+									<span class="item-dash"></span> Системное администрирование -<br> 3 часа в месяц (консультации по
+									телефону и удаленная помощь)<br> 1 выезд по заявке
+								</li>
+								<li class="part__item">
+									<span class="item-dash"></span> 1С обслуживание - 3 часа<br> в месяц (консультация<br> по телефону,
+									удаленная помощь)
+								</li>
+							</ul>
+						</div>
+						<div class="cost-button-wrapper">
+							<span class="cost">19 000 Р/мес</span>
+							<a href="#consultation--bottom" class="button price-button" onclick="pricemiddle()">Выбрать</a>
+						</div>
+					</li>
+
+					<li class="price__item price__item--full">
+						<div class="price_item-wrapper">
+							<h3 class="price_item-title">Полная защита</h3>
+							<p class="price_item-description">
+								Для крупного бизнеса, со штатом и большим документооборотом
+							</p>
+							<ul class="part__list">
+								<li class="part__item">
+									<span class="item-dash"></span> Бухгалтерское обслуживание<br> (ОСНО - от пяти сотрудников,<br> Ломбарды,<br>
+									Организации занимающиеся<br> оптовой или розничной продажей пива)
+								</li>
+								<li class="part__item">
+									<span class="item-dash"></span> Юридическая помощь (составление шаблонов трех видоосновных исходящих договоров)
+								</li>
+								<li class="part__item">
+									<span class="item-dash"></span> Системное администрирование - 5 часов в месяц (консультации по
+									телефону и удаленная помощь) - 2 выезда по заявке
+								</li>
+								<li class="part__item">
+									<span class="item-dash"></span> 1С обслуживание - 5 часов в месяц (консультация<br> по телефону,
+									удаленная помощь) - поддержка обмена между учетными системами
+								</li>
+							</ul>
+						</div>
+
+						<div class="cost-button-wrapper">
+							<span class="cost">34 000 Р/мес</span>
+							<a href="#consultation--bottom" class="button price-button" onclick="pricefull()">Выбрать</a>
+						</div>
+
+					</li>
+				</ul>
+
+				<ul class="price__list price__list--bottom">
+					<li class="price__item price__item--bottom">
+						<div class="price-bottom__wrapper">
+							<h3 class="price_item-title">Розница под ключ</h3>
+							<p class="price_item-description">
+								Все в комплекте с оборудованием
+							</p>
+							<span class="cost cost--top">95 000 Р/мес</span>
+							<a href="#consultation--bottom" class="button price-button price-button--top" onclick="priceExtraFull()">Выбрать</a>
+						</div>
+						<ul class="part__list">
+							<li class="part__item">
+								<span class="item-dash"></span> Открытие ООО или ИП (регистрация, открытие расчетного счета<br> в
+								Банке-партнере, две печати, заявка на экваринговый терминал)
+							</li>
+							<li class="part__item">
+								<span class="item-dash"></span> Постановка на учет в ИФНС торговой точки, регистрация ККТ и ИФНС
+							</li>
+							<li class="part__item">
+								<span class="item-dash"></span> Оборудование для организации розничной торговли (Персональный<br>
+								компьютер в сборе или ноутбук, считыватель штрих кодов, касса,
+								весы, установленное програмное обеспечение, установленная и готовая<br>
+								к работе 1с)
+							</li>
+							<li class="part__item">
+								<span class="item-dash"></span> Запуск торговой точки (Занесение торговой номенклатуры в 1с,<br>
+								установка цен на товар, присвоение штрих кодов, настройка<br> оборудования
+								на торговой точке, настройка экваринга)
+							</li>
+						</ul>
+						<div class="cost-button-wrapper">
+							<span class="cost cost--bottom">95 000 Р/мес</span>
+							<a href="#consultation--bottom" class="button price-button price-button--bottom" onclick="priceExtraFull()">Выбрать</a>
+						</div>
+					</li>
+				</ul>
+				<div class="description--bottom__wrapper">
+					<p class="price-description price-description--bottom">
+						При открытии и развитии любого бизнеса важным вопросом является выбор
+						системы налогообложения.<br> Платить налоги нужно обязательно, но они не
+						должны препятствовать достижению<br> главной цели любого бизнеса - получению
+						прибыли.
+					</p>
+					<p class="price-description price-description--bottom">
+						На сегодняшний день законодательство Российской Федерации предусматривает
+						5 систем налогообложения:
+					</p>
+				</div>
+				<ul class="price-description_list">
+					<li class="price-description__item">ОСН - общая система налогообложения;</li>
+					<li class="price-description__item">УСН - упрощенная система законодательство;</li>
+					<li class="price-description__item">ПАТЕНТ - патентная система законодательство;</li>
+					<li class="price-description__item">ЕНВД - вмененная система налогообложения
+						или единый налог на вмененный доход;</li>
+					<li class="price-description__item">ЕСХН - единый сельскохозяйственный налог.</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="about">
+	    <div class="container">
+	      <h2 class="about-title wow" id="about">О нас</h2>
+	      <p class="about-description">ООО "Поддержка" на рынке с 2015 года</p>
+	      <p class="clarification">За это время куча положительных отзывов и благодарностей
+	        клиентов. Мы ведем бухгалтерский, налоговый и кадастровый учет в компаниях
+	        с все возможными системами налогообложения и видами деятельности.
+	      </p>
+	      <p class="clarification">Индивидуальный подход к каждому клиенту и в части
+	        ценообразования тоже.
+	      </p>
+	      <p class="clarification">Аутсорсинг выгоднее штатного бухгалтера, клиенту
+	        не нужно обустраивать рабочее место, приобретать бух программы и программы
+	        для сдачи отчетности, нет декретов, больничных листов и прочего, плюс клиент
+	        получаетс качественный учет, за организацию которого несет ответственность компания.
+	        Все риски прописываются в договоре.
+	      </p>
+	      <picture>
+					<source type="image/webp" media="(min-width: 1300px)" srcset="img/handshake@1x.webp, img/handshake@2x.webp 2x">
+					<source type="image/webp" media="(min-width: 768px)" srcset="img/handshake-tablet@1x.webp, img/handshake-tablet@2x.webp 2x">
+					<source type="image/webp" srcset="img/handshake-mobile@1x.webp, img/handshake-mobile@2x.webp 2x">
+
+					<source media="(min-width: 1300px)" srcset="img/handshake@1x.jpg, img/handshake@2x.jpg 2x">
+					<source media="(min-width: 768px)" srcset="img/handshake-tablet@1x.jpg, img/handshake-tablet@2x.jpg 2x">
+					<img class="about__image" src="img/handshake-mobile@1x.jpg" srcset="img/handshake-mobile@2x.jpg 2x" width="320" height="295" alt="Бухгалтерская фирма Поддержка">
+
+	      </picture>
+	      <h3 class="about-title--bottom">Специалисты ООО "Поддержка":</h3>
+	      <ul class="opportunities__list">
+	        <div class="opportunities__list-wrapper">
+	          <li class="opportunities__item">
+	            <img src="img/point-1.png" alt="" width="132" height="100">
+	            <p>
+	              Поднимут качество ведения бухгалтер-<br> ского учета в вашей организации<br>
+	              на новый уровень
+	            </p>
+	          </li>
+	          <li class="opportunities__item">
+	            <img src="img/point-3.png" alt="" width="135" height="96">
+	            <p>
+	              Обеспечат вам<br> и вашему бизнесу прямую экономию<br> до 20 000 тысяч<br> рублей
+	              в месяц
+	            </p>
+	          </li>
+	          <li class="opportunities__item">
+	            <img src="img/point-4.png" alt="" width="135" height="96">
+	            <p>
+	              Освободят до 30<br> часов рабочего вре- <br>мени руководителя в месяц
+	            </p>
+	          </li>
+	          <li class="opportunities__item">
+	            <img src="img/point-2.png" alt="" width="130" height="97">
+	            <p>
+	              Возьмут на себя во- просы общения с на- логовыми органами, избавят
+	              от штрафов<br> за несвоевременную<br> или неправильную<br> сдачу отчетности
+	            </p>
+	          </li>
+	          <li class="opportunities__item">
+	            <img src="img/point-5.png" alt="" width="129" height="98">
+	            <p>
+	              Сократят налоговые выплаты
+	            </p>
+	          </li>
+	        </div>
+	      </ul>
+	    </div>
+	  </section>
+
+		<section class="consultation">
+			<div class="container">
+				<div class="consultation-wrapper">
+					<h3 class="consultation-title" id="consultation"><span>Бесплатная</span> консультация</h3>
+					<p class="consultation-description">
+						Оставьте свой номер телефона и мы
+						перезвоним вам
+					</p>
+					<form class="back_call-form" id="backcallform" name="backcallform">
+						<input type="tel" name="backcall" id="phone_1" class="back_call-input" placeholder="+7 (___) ___-__-__" required>
+						<button type="submit" name="button-back_call" class="button button--back_call">Заказать звонок</button>
+					</form>
+					<span class="consent">Согласен на обработку персональных данных</span>
+				</div>
+				<div class="consultation-wrapper">
+					<picture>
+						<source type="image/webp" srcset="img/advice@1x.webp, img/advice@2x.webp 2x">
+						<img class="consultation__image" src="img/advice@1x.png" srcset="img/advice@2x.png 2x" width="516" height="483" alt="Бесплатная консультация по телефону">
+					</picture>
+				</div>
+			</div>
+		</section>
+
+		<section class="advantages">
+	    <div class="container">
+	      <h3 class="advantages-title wow" id="advantages">Преимущества</h2>
+	        <p class="advantages-description">Заключения договора на оказание бухгалтерских
+	          услуг в нашей компании:</p>
+	        <ul class="advantages__list">
+	          <li class="advantages__item">
+	            <picture>
+	              <source type="image/webp" srcset="img/advantages-1@1x.webp, img/advantages-1@2x.webp 2x">
+	              <img class="advantages-image" src="img/advantages-1@1x.jpg" srcset="img/advantages-1@2x.jpg 2x" width="352" height="203" alt="Ведение бухгалтерского учета">
+	            </picture>
+	            <div class="advantages-wrapper">
+	              <h4 class="advantages__item-title">Индивидуальный подход</h4>
+	              <p class="advantages__item-description">
+	                При работе с организациями<br> малого и среднего бизнеса<br> мы строим свою
+	                работу исходя из потребностей клиента.
+	              </p>
+	              <p class="advantages__item-description">
+	                Все действия координируются<br> таким образом, чтобы<br> вмешательство в
+	                деятельность<br> фирмы была минимальным.
+	              </p>
+	            </div>
+	          </li>
+	          <li class="advantages__item">
+	            <picture>
+	              <source type="image/webp" srcset="img/advantages-2@1x.webp, img/advantages-2@2x.webp 2x">
+	              <img class="advantages-image" src="img/advantages-2@1x.jpg" srcset="img/advantages-2@2x.jpg 2x" width="352" height="203" alt="Ведение бухгалтерского учета">
+	            </picture>
+	            <div class="advantages-wrapper">
+
+	              <h4 class="advantages__item-title">Страховка от рисков</h4>
+	              <p class="advantages__item-description">
+	                При оказании бухгалтерских услуг организациям мы гарантируем,<br> что
+	                все работы всегда будут выполняться в срок. Штатный<br> бухгалтер может
+	                уйти в отпуск, заболеть или взять отгул.
+	              </p>
+	              <p class="advantages__item-description">
+	                Наши же специалисты будут доступны в любой момент времени. Более
+	                того:<br> все возможные риски и штрафы мы берем на себя.
+	              </p>
+	            </div>
+
+	          </li>
+	          <li class="advantages__item">
+	            <picture>
+	              <source type="image/webp" srcset="img/advantages-3@1x.webp, img/advantages-3@2x.webp 2x">
+	              <img class="advantages-image" src="img/advantages-3@1x.jpg" srcset="img/advantages-3@2x.jpg 2x" width="352" height="203" alt="Ведение бухгалтерского учета">
+	            </picture>
+	            <div class="advantages-wrapper">
+
+	              <h4 class="advantages__item-title">Повышение общего уровня бухучета
+	                организации</h4>
+	              <p class="advantages__item-description">
+	                Мы занимаемся не просто предоставлением бухгалтерских<br> услуг. Мы
+	                полностью<br> контролируем этот процесс и<br> даем полезные рекомендации.
+	              </p>
+	              <p class="advantages__item-description">
+	                Например, вы узнаете о возможности оптимизации налогообложения.
+	              </p>
+	            </div>
+
+	          </li>
+	        </ul>
+	        <ul class="advantages__list advantages__list--bottom">
+	          <li class="advantages__item advantages__item--bottom">
+	            <picture>
+	              <source type="image/webp" srcset="img/advantages-4@1x.webp, img/advantages-4@2x.webp 2x">
+	              <img class="advantages-image" src="img/advantages-4@1x.jpg" srcset="img/advantages-4@2x.jpg 2x" width="352" height="203" alt="Ведение бухгалтерского учета">
+	            </picture>
+	            <div class="advantages-wrapper">
+
+	              <h4 class="advantages__item-title">Экономия</h4>
+	              <p class="advantages__item-description">
+	                Обращение к нам позволит вам существенно сэкономить: работа стороннего
+	                специалиста стоит значительно меньше, чем работа штатного бухгалтера.
+	                Вам не придется тратиться на заработную плату, налоги, оснащение
+	                рабочего места и программное обеспечение.
+	              </p>
+	              <p class="advantages__item-description">
+	                К тому же наши цены на бухгалтерское обслуживание являются одними
+	                из самых небольших в городе. А оплачивая бухгалтерские услуги, вы
+	                можете рассчитывать на бесплатную юридическую помощь.
+	              </p>
+	            </div>
+
+	          </li>
+	        </ul>
+	        <div class="advantages-description-wrapper">
+	          <p class="advantages-description advantages-description--bottom">
+	            Накопленный опыт позволяет нам выстроить
+	            удобную для клиента схему работы, индивидуально подойти к его вопросам,
+	            оказать качественные услуги, предлагая при этом разумные цены.
+	          </p>
+	          <p class="advantages-description advantages-description--bottom">
+	            Мы выступаем за длительное сотрудничество, поэтому стараемся каждому клиенту
+	            предложить интересное, где-то даже уникальное предложение. Отталкиваясь от
+	            ваших потребностей, мы и строим свои предложения. При этом мы очень хорошо
+	            относимся к малому бизнесу и тем, кто только планирует заняться собственным делом.
+	            Поэтому у нас есть целый ряд предложений специально для них!
+	          </p>
+	        </div>
+	    </div>
+	  </section>
+
+		<section class="consultation--bottom">
+	    <div class="container">
+	      <div class="consultation--bottom__wrapper">
+	        <h3 class="consultation-title" id="consultation--bottom"><span>Записаться на</span> консультацию</h3>
+	        <p class="consultation-description">
+	          Оставьте свои контактные данные и мы перезвоним вам
+	        </p>
+
+	        <form class="consultation-form" id="consultationform" name="consultationform">
+
+	          <input type="text" name="name" placeholder="Имя" required>
+	          <input type="email" name="email" placeholder="E-mail" required>
+	          <input type="tel" id="phone_2" name="phone" placeholder="+7 (___) ___-__-__" required>
+	          <textarea name="appeal" id="appeal" placeholder="Обращение" class="appeal"></textarea>
+
+	          <span class="consent">Согласен на обработку персональных данных</span>
+	          <button type="submit" name="button-back_call" class="button button--back_call">Отправить</button>
+	        </form>
+	      </div>
+	      <div class="contacts-wrapper">
+	        <h3 class="consultation-title"><span>Контакты</span></h3>
+	        <ul class="contacts__list">
+	          <li class="contacts__item">
+	            <h5 class="contacts-title">Адрес:</h5>
+	            <p class="contacts-description contacts-description--address">
+	              г. Заречный,<br> ул. Ивана Богаткова, 29 оф. 107
+	            </p>
+	          </li>
+	          <li class="contacts__item">
+	            <h5 class="contacts-title">Телефон:</h5>
+	            <p class="contacts-description contacts-description--phone">
+	              +7(999)123-45-67
+	            </p>
+	          </li>
+	          <li class="contacts__item">
+	            <picture>
+	              <source type="image/webp" srcset="img/logo@1x.webp, img/logo@2x.webp 2x">
+	              <img class="logo__image" src="img/logo@1x.png" srcset="img/logo@2x.png 2x" width="185" height="132" alt="Бухгалтерская фирма Поддержка">
+	            </picture>
+	          </li>
+	        </ul>
+	      </div>
+	    </div>
+	  </section>
+
+		<section class="slider">
+	    <div class="container">
+	      <h3 class="slider-title wow" id="slider"><span>Нам</span> доверяют</h3>
+	      <p class="slider-description">
+	        Клиенты, которые заручились нашей поддержкой
+	      </p>
+	      <div class="slider__list-wrapper">
+	        <input class="visually-hidden" type="radio" id="partners-1" name="partners" checked>
+	        <input class="visually-hidden" type="radio" id="partners-2" name="partners">
+	        <input class="visually-hidden" type="radio" id="partners-3" name="partners">
+	        <div class="slider-products-controls">
+	          <label class="slider-controls-item
+	            slider-controls-item--1" for="partners-1">Первый</label>
+	          <label class="slider-controls-item
+	            slider-controls-item--2" for="partners-2">Второй</label>
+	          <label class="slider-controls-item
+	            slider-controls-item--3" for="partners-3">Третий</label>
+	        </div>
+	        <ul class="slider__list">
+	          <li class="slider__item">
+	            <img src="img/company-1@1x.png" width="262" height="68" alt="Альфа банка" class="slider-image">
+	            <img src="img/company-2@1x.png" width="255" height="68" alt="Тинькофф" class="slider-image">
+	            <img src="img/company-3@1x.png" width="221" height="68" alt="Сбербанк" class="slider-image">
+	          </li>
+	          <li class="slider__item">
+	            <img src="img/company-3@1x.png" width="221" height="68" alt="Сбербанк" class="slider-image">
+							<img src="img/company-1@1x.png" width="262" height="68" alt="Альфа банка" class="slider-image">
+	            <img src="img/company-2@1x.png" width="255" height="68" alt="Тинькофф" class="slider-image">
+	          </li>
+	          <li class="slider__item">
+	            <img src="img/company-2@1x.png" width="255" height="68" alt="Тинькофф" class="slider-image">
+	            <img src="img/company-3@1x.png" width="221" height="68" alt="Сбербанк" class="slider-image">
+	            <img src="img/company-1@1x.png" width="262" height="68" alt="Альфа банка" class="slider-image">
+	          </li>
+	        </ul>
+	      </div>
+	    </div>
+	  </section>
+
+		<section class="map">
+			<div class="container">
+				<div class="contacts__map-wrapper">
+					<picture>
+						<source type="image/webp" srcset="img/map@1x.webp, img/map@2x.webp 2x">
+						<img class="map-img" src="img/map@1x.jpg" srcset="img/map@2x.jpg 2x" width="1366" height="503" alt="г. Заречный, ул. Ивана Богаткова, 29 оф. 107">
+					</picture>
+				</div>
+				<div class="contacts__map" id="map" aria-label="map"></div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="main-footer">
+	  <div class="container">
+	    <nav class="main-nav">
+	      <a href="#" class="page-header-logo">
+	        <picture>
+	          <source type="image/webp" srcset="img/logo@1x.webp, img/logo@2x.webp 2x">
+	          <img class="logo__image" src="img/logo@1x.png" srcset="img/logo@2x.png 2x" width="185" height="132" alt="Бухгалтерская фирма Поддержка">
+	        </picture>
+	      </a>
+	      <ul class="site-nav__list">
+	        <li class="site-nav__item"><a href="#top">Главная</a></li>
+	        <li class="site-nav__item"><a href="#services">Услуги</a></li>
+	        <li class="site-nav__item"><a href="#price">Тарифный план</a></li>
+	        <li class="site-nav__item"><a href="#about">О нас</a></li>
+	        <li class="site-nav__item"><a href="#advantages">Преимущества</a></li>
+	        <li class="site-nav__item"><a href="#slider">Нам доверяют</a></li>
+	      </ul>
+	      <ul class="user-nav__list">
+	        <li class="user-nav__item user-nav--place">
+	          <button type="button" name="user-nav--button" class="button--zeroing">ул. Ивана Богаткова, 29 оф. 107</button>
+	        </li>
+	        <li class="user-nav__item user-nav--phone">
+	          <!-- по нажатию открывается набранный номер -->
+	          <a href="tel:12345678">тел: +7(999)123-45-67</a>
+	        </li>
+	      </ul>
+	    </nav>
+	  </div>
+	  <a href="#top" id="scroll_top" title="Наверх"></a>
+	</footer>
+
+
+
+
+
+	<div class="overlay js-overlay-thank-you">
+		<div class="popup js-thank-you">
+			<h2>Спасибо за заявку</h2>
+			<div class="close-popup js-close-thank-you"></div>
+		</div>
+	</div>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDluwBfvy_M346vmyhvVLD62kK76nnVtss"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/script.js"></script>
+
+
+</body>
+
+</html>

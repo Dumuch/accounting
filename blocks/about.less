@@ -1,0 +1,117 @@
+.about {
+  margin-top: 70px;
+}
+
+.about .container {
+  .container--center;
+}
+
+.about-title {
+  .title--uniform;
+}
+
+.about-description {
+  .p--zeroing;
+  font-weight: bolder;
+  font-size: 18px;
+  color: #000000;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.clarification {
+  .p--zeroing;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.about__image {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.about-title--bottom {
+  .title--zeroing;
+  margin-top: 50px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.opportunities__list {
+  .list--zeroing;
+  margin-top: 45px;
+}
+
+.opportunities__list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -28px;
+}
+
+.opportunities__item {
+  width: 352px;
+  margin-left: 28px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.opportunities__item img {
+  height: fit-content;
+}
+
+.opportunities__item p {
+  .p--zeroing;
+  line-height: 20px;
+  margin-left: 30px;
+}
+@media (min-width: @mobile-width-min) and (max-width: @mobile-width-only) {
+  .about .container {
+    width: 320px;
+  }
+
+  .clarification {
+    padding: 0 5px;
+    font-size: 14px;
+  }
+
+  .opportunities__item:last-child {
+    margin-top: -30px;
+  }
+
+  .opportunities__item:last-child p {
+    margin-top: 20px;
+  }
+}
+@media (min-width: @mobile-width-only) and (max-width: @desktop-width) {
+  .about .container {
+    width: 768px;
+  }
+
+  .about__image {
+    width: 768px;
+    height: auto;
+  }
+
+  .opportunities__list-wrapper {
+    margin-left: 0;
+  }
+
+  .opportunities__item:last-child {
+    margin-top: -30px;
+  }
+
+  .opportunities__item:last-child p {
+    margin-top: 20px;
+  }
+
+  .clarification {
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

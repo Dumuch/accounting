@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Admin Panel"
+AuthUserFile /home/a0429386/domains/vyazanie-kis.ru/public_html/accounting/backroom/.htpasswd
+Require valid-user

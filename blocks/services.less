@@ -1,0 +1,122 @@
+.services {
+  margin-top: 60px;
+}
+
+.services .container {
+  .container--center;
+}
+
+.services-title {
+  .title--uniform;
+}
+
+.services-title span {
+  color: #000000;
+}
+
+.services-description {
+  .p--zeroing;
+  text-align: center;
+}
+
+.services__list {
+  .list--zeroing;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 45px;
+}
+
+.services__item {
+  width: 352px;
+  height: 194px;
+  padding-top: 155px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background-color: @blue;
+  background-position: top 18px center;
+  background-repeat: no-repeat;
+  font-weight: bolder;
+  color: @orange;
+  text-align: center;
+}
+
+.services__item:first-child {
+  background-color: @orange;
+  color: #ffffff;
+}
+
+.services__item--accounting {
+  background-image: url("../img/ticket-1.png");
+}
+
+.services__item--legal {
+  background-image: url("../img/ticket-2.png");
+}
+
+.services__item--technical {
+  background-image: url("../img/ticket-3.png");
+}
+
+.services-extra__list {
+  .list--zeroing;
+  margin-top: 45px;
+  padding-bottom: 35px;
+  border-bottom: 5px solid #e6e7e8;
+}
+
+.services-extra__item {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 2px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: 0;
+    width: 6px;
+    height: 1px;
+    background-color: @orange;
+  }
+}
+
+.services-button {
+  margin-top: 40px;
+  padding: 20px;
+}
+@media (min-width: @mobile-width-min) and (max-width: @mobile-width-only) {
+  .services .container {
+    width: 320px;
+  }
+
+  .services__item {
+    margin-bottom: 20px;
+  }
+
+  .services-extra__list {
+    margin-top: 35px;
+    padding: 0 5px;
+  }
+}
+@media (min-width: @mobile-width-only) and (max-width: @desktop-width) {
+  .services .container {
+    width: 768px;
+  }
+
+  .services__list {
+    padding-left: 10px;
+  }
+
+  .services__item {
+    width: 245px;
+  }
+
+  .services-extra__list {
+    padding-left: 10px;
+  }
+
+  .services-button {
+    display: block;
+  }
+}
